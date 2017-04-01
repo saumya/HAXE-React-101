@@ -8,7 +8,11 @@
 node_modules/
 npm-debug.log
 
-# builds
+############ builds
+# src-haxe/bin should be ignored. Its here just to compare the .js output
+# haxe
+#src-haxe/bin/
 
+# webpack
 build/
 buildReact/

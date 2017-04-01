@@ -7,25 +7,30 @@ function $extend(from, fields) {
 	return proto;
 }
 var React_Component = require("react").Component;
-var HaxeJSApp = function() {
-	React_Component.call(this);
+var HaxeJSApp = function(props,context) {
+	React_Component.call(this,props,context);
 };
 HaxeJSApp.main = function() {
-	ReactDOM.render({ "$$typeof" : $$tre, type : HaxeJSApp, props : { }},window.document.getElementById("recat-app"));
-};
-HaxeJSApp.statelessComponent = function(props) {
-	return { "$$typeof" : $$tre, type : "div", props : Object.assign({ },props,{ children : " Haxe + React "})};
+	ReactDOM.render({ "$$typeof" : $$tre, type : view_SomeApp, props : { }},window.document.getElementById("recat-app"));
 };
 HaxeJSApp.__super__ = React_Component;
 HaxeJSApp.prototype = $extend(React_Component.prototype,{
-	render: function() {
-		var cname = "foo";
-		return { "$$typeof" : $$tre, type : "div", props : { className : cname, children : { "$$typeof" : $$tre, type : HaxeJSApp.statelessComponent, props : { style : { margin : "10px"}}}}};
-	}
 });
 var ReactDOM = require("react-dom");
 var react_ReactMacro = function() { };
+var view_SomeApp = function(props) {
+	React_Component.call(this,props);
+};
+view_SomeApp.__super__ = React_Component;
+view_SomeApp.prototype = $extend(React_Component.prototype,{
+	render: function() {
+		var tmp = $$tre;
+		var tmp1 = { "$$typeof" : $$tre, type : "h2", props : { children : "HAXE + React"}};
+		return { $$typeof : tmp, type : "div", props : { style : { margin : "10px"}, children : [tmp1,{ "$$typeof" : $$tre, type : "h3", props : { children : "Welcome Home!"}}]}};
+	}
+});
 var $$tre = (typeof Symbol === "function" && Symbol.for && Symbol.for("react.element")) || 0xeac7;
 HaxeJSApp.displayName = "HaxeJSApp";
+view_SomeApp.displayName = "SomeApp";
 HaxeJSApp.main();
 })();
