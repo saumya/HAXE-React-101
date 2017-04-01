@@ -2,10 +2,10 @@
   "name": "haxereact",
   "version": "1.0.0",
   "description": "A reactJS project on HAXE",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "2js": "babel --presets react,es2015 src --out-dir buildReact",
-    "pack": "webpack buildReact/index.js build/bundle.js"
+    "pack": "webpack src-haxe/bin/app.js build/bundle.js"
   },
   "author": "saumya",
   "license": "MIT",
@@ -14,5 +14,8 @@
     "babel-preset-react": "^6.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "webpack": "^2.3.2"
   }
 }

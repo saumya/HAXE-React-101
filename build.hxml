@@ -1,0 +1,29 @@
+#
+# Compiles the .hx files to .js
+
+# ########################################################
+# For single file outputs (each one will be a separate .js)
+# -js com/jungle/Tree.js 
+# -cp src 
+# com.jungle.Tree
+# --next
+# -js com/jungle/Animal.js 
+# -cp src 
+# com.jungle.Animal
+# ########################################################
+# For 1 compiled output JS
+# [No Main] (js:No output)
+
+#-lib hxnodejs
+-lib react 
+
+-cp src-haxe/src
+-main HaxeJSApp
+-js src-haxe/bin/app.js
+#-dce full
+
+# finally run it from commandline
+# -cmd node bin/app.js
+# run it from Browser
+#-cmd serve -p 1234
+# ########################################################

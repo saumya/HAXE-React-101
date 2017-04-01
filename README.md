@@ -4,6 +4,21 @@ HAXE-JS-React-101
  
  This uses the [haxe-react][3] library
 
+### Setup
+ - init `npm init`
+ - configure package.json
+ - install the required `npm` packages
+ - create `build.hxml` and configure it
+ - install `haxelib install react`, this is one time per computer
+ - add the lib to `build.hxml`
+
+The build is 2 step process.
+ - Compile with [HAXE][2] `haxe build.hxml`
+ - Pack with webpack `npm run pack`
+
+See the output by 
+ - Run a webserver and open `home.html`
+
 
 
 
