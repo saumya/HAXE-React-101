@@ -12,30 +12,30 @@
 
 ##--next
 
--lib react 
-#-D js-classic
--D js-es5
--js src-haxe/bin/SomeApp.js 
--cp src-haxe/src 
-view.SomeApp
+##-lib react 
+##-D js-classic
+##-D js-es5
+##-js src-haxe/bin/SomeApp.js 
+##-cp src-haxe/src 
+##view.SomeApp
 
---next 
+##--next 
 
--lib react 
-#-D js-classic
--D js-es5
--js src-haxe/bin/ViewOne.js 
--cp src-haxe/src 
-view.ViewOne
+##-lib react 
+##-D js-classic
+##-D js-es5
+##-js src-haxe/bin/ViewOne.js 
+##-cp src-haxe/src 
+##view.ViewOne
 
 # ########################################################
 # For 1 compiled output JS
 # [No Main] (js:No output)
 
-###-lib react 
-###-cp src-haxe/src
-###-main HaxeJSApp
-###-js src-haxe/bin/app.js
+-lib react 
+-cp src-haxe/src
+-main HaxeJSApp
+-js src-haxe/bin/app.js
 ###-dce full
 
 # finally run it from commandline

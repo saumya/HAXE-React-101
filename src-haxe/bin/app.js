@@ -17,6 +17,7 @@ HaxeJSApp.__super__ = React_Component;
 HaxeJSApp.prototype = $extend(React_Component.prototype,{
 });
 var ReactDOM = require("react-dom");
+var react_ReactMacro = function() { };
 var view_SomeApp = function(props) {
 	React_Component.call(this,props);
 };

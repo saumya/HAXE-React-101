@@ -16,3 +16,6 @@ npm-debug.log
 # webpack
 build/
 buildReact/
+
+# Babel
+src-haxe/bin/src-babel/
