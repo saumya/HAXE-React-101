@@ -5,31 +5,38 @@
 # For single file outputs (each one will be a separate .js)
 # ref: haxe -js com/jungle/Tree.js -cp src com.jungle.Tree
 
-###-main HaxeJSApp
-###-lib react
-###-js src-haxe/bin/app.js
-###-cp src-haxe/src
-###--next
-###-lib react 
-###-js src-haxe/bin/SomeApp.js 
-###-cp src-haxe/src 
-###view.SomeApp
-###--next 
-###-lib react 
-###-js src-haxe/bin/ViewOne.js 
-###-cp src-haxe/src 
-###view.ViewOne
+##-main HaxeJSApp
+##-lib react
+##-js src-haxe/bin/app.js
+##-cp src-haxe/src
+
+##--next
+
+-lib react 
+#-D js-classic
+-D js-es5
+-js src-haxe/bin/SomeApp.js 
+-cp src-haxe/src 
+view.SomeApp
+
+--next 
+
+-lib react 
+#-D js-classic
+-D js-es5
+-js src-haxe/bin/ViewOne.js 
+-cp src-haxe/src 
+view.ViewOne
 
 # ########################################################
 # For 1 compiled output JS
 # [No Main] (js:No output)
 
-##-lib hxnodejs
--lib react 
--cp src-haxe/src
--main HaxeJSApp
--js src-haxe/bin/app.js
--dce full
+###-lib react 
+###-cp src-haxe/src
+###-main HaxeJSApp
+###-js src-haxe/bin/app.js
+###-dce full
 
 # finally run it from commandline
 # -cmd node bin/app.js

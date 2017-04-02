@@ -4,20 +4,21 @@
   "description": "A reactJS project on HAXE",
   "main": "app.js",
   "scripts": {
-    "2js": "babel --presets react,es2015 src --out-dir buildReact",
     "2HaxeJS": "haxe build.hxml",
-    "pack": "webpack src-haxe/bin/app.js build/bundle.js",
+    "2BabelJS": "babel --presets react,es2015 src-haxe/bin/AppJS.js --out-dir src-haxe/bin/src-babel",
+    "packJS": "webpack src-haxe/bin/src-babel/AppJS.js build/bundle.js",
     "show": "serve -p 1234"
   },
   "author": "saumya",
   "license": "MIT",
   "dependencies": {
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
     "webpack": "^2.3.2"
   }
 }
