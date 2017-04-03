@@ -2,6 +2,7 @@
   "name": "haxereact",
   "version": "1.0.0",
   "description": "A reactJS project on HAXE",
+  "repository": "https://github.com/saumya/HAXE-React-101",
   "main": "app.js",
   "scripts": {
     "2HaxeJS": "haxe build.hxml",
