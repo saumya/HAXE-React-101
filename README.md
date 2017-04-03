@@ -28,9 +28,18 @@ See the output by
   - compile with HAXE `haxe build.hxml`
   - pack with Webpack `npm run packJS`
 
+## This is a 2 fold project
+ 
+ - One can just compile everything to a single .js file with [HAXE][2]
+ - Once can compile every .hx file to .js file in [HAXE][2] and entry file is just a ,js file `BabelJSApp.js`
+  - Then compile all these with [Babel][4]
+ - Now pack them with [Webpack][5]
+ - That's upto you , which path to follow
 
 
 
 [1]: https://facebook.github.io/react/ 
-[2]:  http://haxe.org/
+[2]: http://haxe.org/
 [3]: https://github.com/massiveinteractive/haxe-react
+[4]: https://babeljs.io/
+[5]: https://webpack.github.io/
