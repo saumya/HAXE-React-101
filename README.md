@@ -31,7 +31,7 @@ See the output by
 ## This is a 2 fold project
  
  - One can just compile everything to a single .js file with [HAXE][2]
- - Once can compile every .hx file to .js file in [HAXE][2] and entry file is just a ,js file `BabelJSApp.js`
+ - Once can compile every .hx file to .js file in [HAXE][2] and entry file is just a .js file `BabelJSApp.js` in folder `src-haxe/bin`
   - Then compile all these with [Babel][4]
  - Now pack them with [Webpack][5]
  - That's upto you , which path to follow
