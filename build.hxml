@@ -5,37 +5,44 @@
 # For single file outputs (each one will be a separate .js)
 # ref: haxe -js com/jungle/Tree.js -cp src com.jungle.Tree
 
-##-main HaxeJSApp
-##-lib react
-##-js src-haxe/bin/app.js
-##-cp src-haxe/src
+####################################################################
+## Here -main is Not Needed: As the main is now from JS file itsef 
+####################################################################
+# Just here for reference, not needed
+-main HaxeJSApp
+-lib react
+-js src-haxe/bin/app.js
+-cp src-haxe/src
 
-##--next
+--next
 
-##-lib react 
+# These will output the .JS files to be consumed 
+-lib react 
 ##-D js-classic
 ##-D js-es5
-##-js src-haxe/bin/SomeApp.js 
-##-cp src-haxe/src 
-##view.SomeApp
+-js src-haxe/bin/SomeApp.js 
+-cp src-haxe/src 
+view.SomeApp
 
-##--next 
+--next 
 
-##-lib react 
+-lib react 
 ##-D js-classic
 ##-D js-es5
-##-js src-haxe/bin/ViewOne.js 
-##-cp src-haxe/src 
-##view.ViewOne
+-js src-haxe/bin/ViewOne.js 
+-cp src-haxe/src 
+view.ViewOne
 
-# ########################################################
+####################################################################
+## For a HAXE compiled Application, one single JS output
+####################################################################
 # For 1 compiled output JS
 # [No Main] (js:No output)
 
--lib react 
--cp src-haxe/src
--main HaxeJSApp
--js src-haxe/bin/app.js
+##-lib react 
+##-cp src-haxe/src
+##-main HaxeJSApp
+##-js src-haxe/bin/app.js
 ###-dce full
 
 # finally run it from commandline

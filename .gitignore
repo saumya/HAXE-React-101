@@ -18,4 +18,4 @@ build/
 buildReact/
 
 # Babel
-src-haxe/bin/src-babel/
+src-haxe/bin-babel
