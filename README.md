@@ -20,7 +20,13 @@ See the output by
  - Run a webserver and open `home.html`
 
 ### Note
- Critical are the two config files `build.hxml` and `package.json`. Everything else is just a compile and run. Upon Compiling, it will create two folders `src-haxe/bin` and `build`.
+ - Critical are the two config files `build.hxml` and `package.json`. Everything else is just a compile and run. Upon Compiling, it will create two folders `src-haxe/bin` and `build`.
+
+ - To run this project
+  - install node packages `npm install`
+  - install haxelibs `haxelib install react`
+  - compile with HAXE `haxe build.hxml`
+  - pack with Webpack `npm run packJS`
 
 
 

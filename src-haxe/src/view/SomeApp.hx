@@ -8,6 +8,7 @@ import react.ReactMacro.jsx;
 
 import view.ViewOne;
 
+@:expose("SomeApp")
 class SomeApp extends ReactComponent{
     public function new(props:Dynamic){
         super(props);

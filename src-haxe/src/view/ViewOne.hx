@@ -6,6 +6,7 @@ import react.ReactDOM;
 import react.ReactComponent;
 import react.ReactMacro.jsx;
 
+@:expose("ViewOne")
 class ViewOne extends ReactComponent{
     public function new(props:Dynamic){
         super(props);
