@@ -16,6 +16,13 @@ The build is 2 step process.
  - Compile with [HAXE][2] `haxe build.hxml`
  - Pack with webpack `npm run pack`
 
+I have added the above steps into `package.json`
+ - `npm run 2HaxeJS`
+ - `npm run 2BabelJS`
+ - `npm run packJS`
+ - `npm run show`
+ - Now open a browser and navigate to `http://localhost:1234/`
+
 See the output by 
  - Run a webserver and open `home.html`
 
